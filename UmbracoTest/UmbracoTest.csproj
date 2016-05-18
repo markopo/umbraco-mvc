@@ -332,6 +332,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\ContactUs.cshtml" />
     <Content Include="App_Plugins\UmbracoTestPlugins\Views\MyPluginSurface\Index.cshtml" />
+    <Content Include="Views\BlogOverview.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -367,11 +368,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BlogPostRepositoryController.cs" />
     <Compile Include="Controllers\ContactUsSurfaceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="CustomUmbracoApplication.cs" />
     <Compile Include="Extensions\UmbracoExtensions.cs" />
     <Compile Include="Helpers\UmbracoHelper.cs" />
+    <Compile Include="Models\BlogOverviewModel.cs" />
+    <Compile Include="Models\BlogPostModel.cs" />
     <Compile Include="Models\ContactUsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
